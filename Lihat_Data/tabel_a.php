@@ -7,7 +7,6 @@
     <div id="TabelDataPendaftaran">
         <table>
             <tr bgcolor="white" style="text-align: center;">
-                <th rowspan="2">Nama Kegiatan</th>
                 <th rowspan="2">Nama</th>
                 <th colspan="2">Lahir</th>
                 <th rowspan="2">No Hp</th>
@@ -21,8 +20,7 @@
             </tr>
 
             <?php foreach($result as $row) { ?>
-                <tr class="teks" style="text-align: center;">
-                    <td><?php echo $row["kegiatan"]?></td>    
+                <tr class="teks" style="text-align: center;"> 
                     <td><?php echo $row["nama"]?></td>
                     <td><?php echo $row["tempatlahir"]?></td>
                     <td><?php echo $row["tanggallahir"]?></td>
@@ -33,6 +31,6 @@
                 </tr>
             <?php } ?>
 
-            <a href="/UTS/Dashboard/manajemen.php">Kembali</a>
+            <a href="/UTS/index.php">Kembali</a>
         </table>
     </div>

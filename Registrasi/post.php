@@ -1,8 +1,8 @@
 <?php
+include "koneksi.php";
         error_reporting(0);
        
-        if(isset($_POST["regis"])){
-            $kegiatan = $_POST["kegiatan"];
+        if(isset($_POST["register"])){
             $nama = $_POST["nama"];
             $tempatlahir = $_POST["tempatlahir"];
             $tanggallahir = $_POST["tanggallahir"];
@@ -17,8 +17,8 @@
 
             $con = mysqli_connect("localhost","root","","uts");
 
-            $query = "INSERT INTO seminar_a (kegiatan, nama, tempatlahir, tanggallahir, nohp, jeniskelamin, email, foto) 
-                    VALUES ('$kegiatan', '$nama', '$tempatlahir', '$tanggallahir', '$nohp', '$jeniskelamin', '$email', '$foto')";
+            $query = "INSERT INTO seminar_a (nama, tempatlahir, tanggallahir, nohp, jeniskelamin, email, foto) 
+                    VALUES ('$nama', '$tempatlahir', '$tanggallahir', '$nohp', '$jeniskelamin', '$email', '$foto')";
             mysqli_query($con,$query);
             echo "<script> alert ('Sukses Memasukkan Data')</script>";
             
