@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title> Formulir Registrasi Seminar </title>
-    <link rel="stylesheet" href="stylebaru.css">
+    <link rel="stylesheet" href="styleb.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
@@ -39,8 +38,8 @@
           </div>
         </div>
         <div class="gender-details">
-          <input type="radio" name="jkelamin" id="dot-1">
-          <input type="radio" name="jkelamin" id="dot-2">
+          <input type="radio" name="jkelamin" value="Laki-Laki" id="dot-1">
+          <input type="radio" name="jkelamin" value="Perempuan" id="dot-2">
           <span class="gender-title">Jenis Kelamin</span>
           <div class="category">
             <label for="dot-1">
@@ -58,7 +57,7 @@
           <input type="submit" name="register" value="Daftar" >
         </div>
         <div class="button">
-          <a href="/UTS/index.php">
+          <a href="/UTS/Dashboard/dashboard.php">
             <input type="button" name="kembali" value="Kembali">  
           </a>
         </div>
@@ -85,7 +84,7 @@
 
             $con = mysqli_connect("localhost","root","","uts");
 
-            $query = "INSERT INTO seminar_a (nama, tempatlahir, tanggallahir, nohp, jeniskelamin, email, foto) 
+            $query = "INSERT INTO seminar_b (nama, tempatlahir, tanggallahir, nohp, jeniskelamin, email, foto) 
                     VALUES ('$nama', '$tempatlahir', '$tanggallahir', '$nohp', '$jeniskelamin', '$email', '$foto')";
             mysqli_query($con,$query);
             echo "<script> alert ('Sukses Memasukkan Data')</script>";

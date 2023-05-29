@@ -91,7 +91,7 @@
       if (mysqli_num_rows($result) == 1) {
                   $_SESSION['email'] = $row['email'];
                   $_SESSION['password'] = $row['password'];
-                  header("Location: /UTS/Dashboard/manajemen.php");
+                  header("Location: /UTS/Dashboard/dashboard.php");
       }else{
                   echo "<script>alert('Email atau Password Salah')</script>";
       }

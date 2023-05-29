@@ -1,6 +1,6 @@
 <?php
         $db = new mysqli("localhost","root","","uts");
-        $result = $db->query("SELECT * FROM seminar_a");
+        $result = $db->query("SELECT * FROM seminar_b");
         $db->close();
 ?>
 
