@@ -3,9 +3,18 @@
         $result = $db->query("SELECT * FROM seminar_a");
         $db->close();
 ?>
+    <head>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="logo">
+            <span class="logo-name">Seminar A</span>
+        </div>
+
+        <a href="/UTS/Dashboard/dashboard.php" class="btn-kembali">Kembali</a>
 
     <div id="TabelDataPendaftaran">
-        <table>
+        <table class="tabel">
             <tr bgcolor="white" style="text-align: center;">
                 <th rowspan="2">Nama</th>
                 <th colspan="2">Lahir</th>
@@ -30,7 +39,7 @@
                     <td><img src="/UTS/Registrasi/file/<?php echo $row["foto"];?>"width="100" height="90"></td>
                 </tr>
             <?php } ?>
-
-            <a href="/UTS/Dashboard/dashboard.php">Kembali</a>
         </table>
     </div>
+    </body>
+   

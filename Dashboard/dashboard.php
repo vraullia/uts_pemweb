@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     <table class="tabel">
                 <thead>
-                    <tr>
+                    <tr class="trow">
                         <th>No</th>
                         <th>Nama Kegiatan <i></i></th>
                         <th>Pilihan</th>
