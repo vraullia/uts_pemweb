@@ -137,7 +137,7 @@ nav.open~.overlay {
     margin-bottom: 20px;
 }
 
-.btn-kembali {
+/* .btn {
     background-color: #4070f4;
     color: #fff;
     padding: 10px;
@@ -145,4 +145,8 @@ nav.open~.overlay {
     font-size: 20px;
     border-radius: 10px;
     text-decoration: none;
+} */
+
+.kembali {
+    color: white;
 }

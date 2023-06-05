@@ -10,9 +10,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <!-- <nav class="nav">
         <h1 class="nav_logo">Halaman Login</h1>
-      </nav>
+      </nav> -->
     </header>
 
     <!-- Home -->
@@ -91,7 +91,7 @@
       if (mysqli_num_rows($result) == 1) {
                   $_SESSION['email'] = $row['email'];
                   $_SESSION['password'] = $row['password'];
-                  header("Location: /UTS/Dashboard/dashboard.php");
+                  header("Location: /UTS3/Dashboard/dashboard.php");
       }else{
                   echo "<script>alert('Email atau Password Salah')</script>";
       }

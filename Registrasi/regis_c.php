@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title> Formulir Registrasi Seminar </title>
-    <link rel="stylesheet" href="stylec.css">
+    <link rel="stylesheet" href="style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
@@ -57,7 +57,7 @@
           <input type="submit" name="register" value="Daftar" >
         </div>
         <div class="button">
-          <a href="/UTS/Dashboard/dashboard.php">
+          <a href="/UTS3/Dashboard/dashboard.php">
             <input type="button" name="kembali" value="Kembali">  
           </a>
         </div>
@@ -85,7 +85,7 @@
             $con = mysqli_connect("localhost","root","","uts");
 
             $query = "INSERT INTO seminar_c (nama, tempatlahir, tanggallahir, nohp, jeniskelamin, email, foto) 
-                    VALUES ('$nama', '$tempatlahir', '$tanggallahir', '$nohp', '$jeniskelamin', '$email', '$foto')";
+            VALUES ('$nama', '$tempatlahir', '$tanggallahir', '$nohp', '$jeniskelamin', '$email', '$foto')";
             mysqli_query($con,$query);
             echo "<script> alert ('Sukses Memasukkan Data')</script>";
             

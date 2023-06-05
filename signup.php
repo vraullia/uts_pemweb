@@ -10,9 +10,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <!-- <nav class="nav">
         <h1 class="nav_logo">Halaman Login</h1>
-      </nav>
+      </nav> -->
     </header>
 
     <!-- Home -->

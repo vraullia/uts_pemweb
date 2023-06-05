@@ -9,30 +9,27 @@
 
 body {
     min-height: 100%;
-    background-image: url(wpl.jpg);    
+    background-image: url(wpl.jpg);
 }
 
-.tabel{
-    width: 90%;
-    margin: 10px;
-    border: 5px solid blue;
-    border-radius: 10px;
-    padding: 10px;
-    background: white;
-    font-size:x-large;
-    text-align: center;
+.sec {
+    width: 70%;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 10%;
+
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+.daftar {
+    color: #fff;
+}
+
+.regis {
+    color: #fff;
+}
+
+.log {
+    float: right;
 }
 
 nav .logo {
@@ -48,26 +45,19 @@ nav .logo {
     cursor: pointer;
 }
 
+.logo-log {
+    text-align: right;
+
+}
+
+.log {
+    color: #fff;
+}
+
 .logo .logo-name {
     color: #333;
     font-size: 22px;
     font-weight: 500;
-}
-
-nav .sidebar {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width: 260px;
-    padding: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-}
-
-nav.open .sidebar {
-    left: 0;
 }
 
 .sidebar .sidebar-content {
