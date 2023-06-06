@@ -9,7 +9,9 @@
 
 body {
     min-height: 100%;
-    background-image: url(wpl.jpg);    
+    background-image: url(wpl.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .tabel{
@@ -149,4 +151,6 @@ nav.open~.overlay {
 
 .kembali {
     color: white;
+    text-decoration: none;
+    display: inline-block;
 }
